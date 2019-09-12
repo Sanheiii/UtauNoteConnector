@@ -17,12 +17,6 @@ namespace NoteConnector
         protected override void OnStartup(StartupEventArgs e)
         {
             args = e.Args;
-            if (args.Count() == 0)
-            {
-#if RELEASE
-                this.Shutdown();
-#endif
-            }
             base.OnStartup(e);
         }
     }

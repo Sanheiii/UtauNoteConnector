@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NoteConnector"
         mc:Ignorable="d"
-        Title="NoteConnector" Height="450" Width="800">
+        Title="警告" Height="160" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txt_message" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" Padding="50,0">一条信息</TextBlock>
+        <Button x:Name="btn_OK" Click="Btn_OK_Click" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="10,4" Margin="0,5,0,10">确定</Button>
     </Grid>
 </Window>
